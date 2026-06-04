@@ -1,7 +1,5 @@
 
-🌿 Weed Identification Assistant
-
-
+🌿 Weed Identification Assistant:
 answerable → Facts are sufficient, generate response
 needs_more → Gap identified, reformulate query and re-retrieve
 irrelevant → Question is not weed-related, return a polite redirect
