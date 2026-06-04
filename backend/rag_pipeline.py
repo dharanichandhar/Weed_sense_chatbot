@@ -13,13 +13,18 @@ from langchain_core.prompts import PromptTemplate
 from langgraph.graph import START, END, StateGraph
 
 
-BASE_DIR = Path(__file__).resolve().parents[2]
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 load_dotenv(BASE_DIR / ".env")
 
 PDF_PATH = BASE_DIR / "weed_dataset.pdf"
 
+if not PDF_PATH.exists():
+    raise FileNotFoundError(f"PDF file not found: {PDF_PATH}")
+
 loader = PyPDFLoader(str(PDF_PATH))
 pages = loader.load()
+
 print(f"Total pages: {len(pages)}")
 
 
