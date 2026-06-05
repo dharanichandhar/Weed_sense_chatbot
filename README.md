@@ -1,14 +1,17 @@
 
-🌿 Weed Identification Assistant:                                                                                                                                                                                     
+🌿 Weed Identification Assistant:                                                                                                                                                                                    
+=======
+
 answerable → Facts are sufficient, generate response
 needs_more → Gap identified, reformulate query and re-retrieve
 irrelevant → Question is not weed-related, return a polite redirect
-=======
 
 Live Demo : https://weed-sense-chatbot.vercel.app/  
 
-Deployment :
+Deployment :  
+
  Backend  : Render
+ 
  Frontend : Vercel
 
 # Weed Sense - AI Assistant for Farmers
