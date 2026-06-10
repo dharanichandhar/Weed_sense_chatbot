@@ -65,9 +65,13 @@ Previous Conversation:
 {chat_history}
 
 Instructions:
-- Answer ONLY using the verified facts provided
-- If answer not in facts say 
-  "I don't have information about that"
+- Use the verified facts as your primary source
+- If the question is a follow-up to previous conversation,
+  use chat history to resolve references like "it" or "that weed"
+- If verified facts are empty but chat history provides context,
+  answer based on what was already discussed
+- Only say "I don't have information" if neither facts nor
+  chat history contain the needed info
 - Keep response SHORT and CONCISE
 - Maximum 5 bullet points
 - For weed identification:
