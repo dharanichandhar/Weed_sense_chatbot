@@ -56,7 +56,7 @@ function App() {
           ...updatedHistory,
           {
             role: "bot",
-            content: "Sorry, backend response format correct illa.",
+            content: "Sorry, backend response format is not alignment.",
           },
         ]);
       }
@@ -65,7 +65,7 @@ function App() {
         ...updatedHistory,
         {
           role: "bot",
-          content: "Backend running illa. FastAPI server check pannunga.",
+          content: "Backend is did not running. so check the Fastapi Server",
         },
       ]);
     }
