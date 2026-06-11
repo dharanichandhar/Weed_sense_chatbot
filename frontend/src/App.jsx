@@ -21,7 +21,7 @@ function App() {
   async function askQuestion(customQuestion = null) {
     const finalQuestion = customQuestion || question;
 
-    if (!finalQuestion.trim() || loading) return;
+    if (finalQuestion.trim() === "" || loading) return;
 
     const updatedHistory = [
       ...chatHistory,
@@ -183,7 +183,7 @@ function App() {
         <button
           className="send-btn"
           onClick={() => askQuestion()}
-          disabled={loading || !question.trim()}
+          disabled={loading || question.trim() === ""}
           aria-label="Send message"
         >
           ➤
