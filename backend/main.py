@@ -44,7 +44,7 @@ def run_pipeline(question: str , chat_history: list):
     return graph.invoke(initial_state)
 
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def home():
     return {
         "message": "Farmer Weed Chatbot API is running"
