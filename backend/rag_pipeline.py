@@ -42,6 +42,7 @@ embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 vector_store = Chroma(
     collection_name="weed_management",
     embedding_function=embeddings,
+    persist_directory="./chroma_db"
 )
 
 existing = vector_store.get()
