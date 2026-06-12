@@ -18,9 +18,7 @@ venv/
 # =========================
 # FastAPI / LangChain
 # =========================
-chroma_db/
-.vectorstore/
-*.sqlite3
+
 
 # =========================
 # Node / React / Vite
